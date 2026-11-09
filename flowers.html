@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse Urban Bloom Florist bouquets with indicative NZ prices: everyday, celebration, sympathy and corporate flowers.">
+  <title>Flowers - Urban Bloom Florist</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌼%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <p class="site-title">🌼 Urban Bloom Florist</p>
+    <p>Fresh flowers in Auckland</p>
+  </header>
+  <nav aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">☰ Menu</button>
+    <div class="nav-links" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="flowers.html" aria-current="page">Flowers</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <main id="main">
+    <h1>Our Flowers</h1>
+    <p>Choose a flower arrangement. Prices are in NZ dollars and are indicative.</p>
+
+    <div class="controls" role="group" aria-label="Filter flowers by category">
+      <button type="button" class="filter-btn" data-category="All" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-category="Everyday" aria-pressed="false">Everyday</button>
+      <button type="button" class="filter-btn" data-category="Celebration" aria-pressed="false">Celebration</button>
+      <button type="button" class="filter-btn" data-category="Sympathy" aria-pressed="false">Sympathy</button>
+      <button type="button" class="filter-btn" data-category="Corporate" aria-pressed="false">Corporate</button>
+      <div class="sort-box">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+    </div>
+    <p class="result-count" id="resultCount" role="status">Showing 8 of 8 flowers</p>
+    <p id="noResults" hidden>No flowers match that category. Please choose another.</p>
+
+    <div class="cards" id="products">
+      <article class="product" data-category="Everyday" data-price="69" data-name="Auckland Sunrise" data-order="1">
+        <img src="images/flower-2.webp" alt="Auckland Sunrise bouquet of bright seasonal flowers" width="400" height="300">
+        <h3>Auckland Sunrise</h3><p>Everyday flowers</p><p><strong>$69</strong></p>
+        <a href="contact.html?bouquet=Auckland+Sunrise">Enquire</a>
+      </article>
+      <article class="product" data-category="Celebration" data-price="79" data-name="Soft Blush" data-order="2">
+        <img src="images/flower-3.webp" alt="Soft Blush pastel bouquet" width="400" height="300" loading="lazy">
+        <h3>Soft Blush</h3><p>Celebration flowers</p><p><strong>$79</strong></p>
+        <a href="contact.html?bouquet=Soft+Blush">Enquire</a>
+      </article>
+      <article class="product" data-category="Everyday" data-price="85" data-name="Native Grace" data-order="3">
+        <img src="images/flower-6.webp" alt="Native Grace bouquet" width="400" height="300" loading="lazy">
+        <h3>Native Grace</h3><p>Everyday flowers</p><p><strong>$85</strong></p>
+        <a href="contact.html?bouquet=Native+Grace">Enquire</a>
+      </article>
+      <article class="product" data-category="Celebration" data-price="75" data-name="Celebration Mix" data-order="4">
+        <img src="images/flower-5.webp" alt="Celebration Mix bouquet of colourful flowers" width="400" height="300" loading="lazy">
+        <h3>Celebration Mix</h3><p>Celebration flowers</p><p><strong>$75</strong></p>
+        <a href="contact.html?bouquet=Celebration+Mix">Enquire</a>
+      </article>
+      <article class="product" data-category="Celebration" data-price="95" data-name="Classic Rose Collection" data-order="5">
+        <img src="images/flower-8.webp" alt="Classic Rose Collection red roses" width="400" height="300" loading="lazy">
+        <h3>Classic Rose Collection</h3><p>Celebration flowers</p><p><strong>$95</strong></p>
+        <a href="contact.html?bouquet=Classic+Rose+Collection">Enquire</a>
+      </article>
+      <article class="product" data-category="Sympathy" data-price="89" data-name="Peaceful Wishes" data-order="6">
+        <img src="images/flower-1.webp" alt="Peaceful Wishes sympathy bouquet" width="400" height="300" loading="lazy">
+        <h3>Peaceful Wishes</h3><p>Sympathy flowers</p><p><strong>$89</strong></p>
+        <a href="contact.html?bouquet=Peaceful+Wishes">Enquire</a>
+      </article>
+      <article class="product" data-category="Corporate" data-price="120" data-name="Urban Statement Arrangement" data-order="7">
+        <img src="images/flower-4.webp" alt="Urban Statement Arrangement for offices" width="400" height="300" loading="lazy">
+        <h3>Urban Statement Arrangement</h3><p>Corporate flowers</p><p><strong>From $120</strong></p>
+        <a href="contact.html?bouquet=Urban+Statement+Arrangement">Enquire</a>
+      </article>
+      <article class="product" data-category="Everyday" data-price="70" data-name="Seasonal Designer’s Choice" data-order="8">
+        <img src="images/flower-7.webp" alt="Seasonal Designer’s Choice bouquet" width="400" height="300" loading="lazy">
+        <h3>Seasonal Designer’s Choice</h3><p>Everyday flowers</p><p><strong>From $70</strong></p>
+        <a href="contact.html?bouquet=Seasonal+Designer%E2%80%99s+Choice">Enquire</a>
+      </article>
+    </div>
+
+    <section class="notice">
+      <h2>Gift Add-ons</h2>
+      <p>Glass vase $25 | Greeting card $8 | Chocolates $18 | Gift wrapping $12</p>
+    </section>
+  </main>
+  <footer>
+    <p>Urban Bloom Florist | Auckland, New Zealand</p>
+    <p>Phone: 09 000 0001 | Email: <a href="mailto:hello@urbanbloom.kiwi" style="color:#ffe58c">hello@urbanbloom.kiwi</a></p>
+    <small>Student website prototype – no online orders or payments</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
