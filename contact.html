@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Urban Bloom Florist in Auckland to enquire about bouquets, weddings and corporate flowers.">
+  <title>Contact - Urban Bloom Florist</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌼%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <p class="site-title">🌼 Urban Bloom Florist</p>
+    <p>Fresh flowers in Auckland</p>
+  </header>
+  <nav aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">☰ Menu</button>
+    <div class="nav-links" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="flowers.html">Flowers</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+  </nav>
+  <main id="main">
+    <h1>Contact Us</h1>
+    <p>Have a question or want to enquire about flowers? Fill out this form. Fields marked * are required.</p>
+
+    <form id="enquiry" novalidate>
+      <label for="name">Your name *</label>
+      <input id="name" name="name" autocomplete="name" aria-describedby="name-error" aria-invalid="false">
+      <p class="error" id="name-error"></p>
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" aria-invalid="false">
+      <p class="error" id="email-error"></p>
+
+      <label for="occasion">What do you need?</label>
+      <select id="occasion" name="occasion">
+        <option>Birthday flowers</option>
+        <option>Anniversary flowers</option>
+        <option>Sympathy flowers</option>
+        <option>Wedding or event</option>
+        <option>Corporate flowers</option>
+        <option>Other</option>
+      </select>
+
+      <label for="bouquet">Bouquet you are interested in</label>
+      <select id="bouquet" name="bouquet">
+        <option>Not sure yet</option>
+        <option>Auckland Sunrise</option>
+        <option>Soft Blush</option>
+        <option>Native Grace</option>
+        <option>Celebration Mix</option>
+        <option>Classic Rose Collection</option>
+        <option>Peaceful Wishes</option>
+        <option>Urban Statement Arrangement</option>
+        <option>Seasonal Designer’s Choice</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="5" maxlength="500" aria-describedby="message-error messageCount" aria-invalid="false"></textarea>
+      <p class="hint" id="messageCount">0 / 500</p>
+      <p class="error" id="message-error"></p>
+
+      <button type="submit">Send Enquiry</button>
+      <div class="form-status" id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+
+    <h2>Our Details</h2>
+    <p><strong>Location:</strong> Auckland, New Zealand</p>
+    <p><strong>Phone:</strong> 09 000 0001</p>
+    <p><strong>Email:</strong> hello@urbanbloom.kiwi</p>
+    <p><strong>Hours:</strong> Monday–Friday 8:30am–5:30pm; Saturday 9am–3pm; Sunday closed.</p>
+    <p><span class="status-badge" data-open-status>Checking opening hours…</span></p>
+    <p><small>This is a student prototype. The form checks your details but does not send an email.</small></p>
+  </main>
+  <footer>
+    <p>Urban Bloom Florist | Auckland, New Zealand</p>
+    <p>Phone: 09 000 0001 | Email: <a href="mailto:hello@urbanbloom.kiwi" style="color:#ffe58c">hello@urbanbloom.kiwi</a></p>
+    <small>Student website prototype – no online orders or payments</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
